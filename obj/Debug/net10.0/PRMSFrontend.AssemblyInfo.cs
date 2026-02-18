@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRMSFrontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55b612d8a8128edb14968095641d1d0d85c1bfda")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRMSFrontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRMSFrontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
