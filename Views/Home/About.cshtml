@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="main-container">
+
+    <!-- ===== SIDEBAR ===== -->
+    <div class="sidebar">
+        <h2>PRMS Navigation</h2>
+        <ul>
+            <li onclick="location.href='@Url.Action("About","Home")'">📄 About Us</li>
+            <li onclick="location.href='@Url.Action("Contact","Home")'">📞 Contact Us</li>
+            <li onclick="location.href='@Url.Action("Index","Home")'">🔑 Login</li>
+        </ul>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <div class="login-section">
+
+        <div class="login-card" style="max-height: 80vh; overflow-y: auto; text-align:left;">
+
+            <h2 style="text-align:center;">About Us</h2>
+
+            <h3 style="margin-top:25px; color:#00e0ff;">
+                Patient Record Management System (PRMS)
+            </h3>
+
+            <hr style="margin:10px 0 20px 0; border:1px solid rgba(255,255,255,0.2);" />
+
+            <p style="margin-bottom:20px; line-height:1.6;">
+                Welcome to the Patient Record Management System (PRMS), a comprehensive and 
+                user-friendly web-based application designed to streamline healthcare 
+                management processes. Our system provides efficient management of patient 
+                records, appointments, medical reports, and more.
+            </p>
+
+            <h3 style="margin-top:20px; color:#00e0ff;">Our Mission</h3>
+            <hr style="margin:10px 0 20px 0; border:1px solid rgba(255,255,255,0.2);" />
+
+            <p style="margin-bottom:20px; line-height:1.6;">
+                Our mission is to simplify healthcare administration by providing a robust, 
+                secure, and intuitive platform for managing patient information. 
+                We strive to enhance the efficiency of healthcare.
+            </p>
+
+            <h3 style="margin-top:20px; color:#00e0ff;">Key Features</h3>
+            <hr style="margin:10px 0 20px 0; border:1px solid rgba(255,255,255,0.2);" />
+
+            <ul style="list-style:none; padding-left:0; line-height:1.8;">
+                <li>✔ <b>Patient Management</b> – Secure registration and management of patient profiles</li>
+                <li>✔ <b>Appointment Scheduling</b> – Easy booking and tracking of patient appointments</li>
+                <li>✔ <b>Medical Records</b> – Digital storage and retrieval of medical histories</li>
+                <li>✔ <b>Lab Reports</b> – Generate and manage laboratory test results</li>
+                <li>✔ <b>Billing System</b> – Patient billing information</li>
+                <li>✔ <b>Admin Dashboard</b> – Comprehensive overview and control for administrators</li>
+            </ul>
+
+            <h3 style="margin-top:25px; color:#00e0ff;">Who Can Use PRMS?</h3>
+            <hr style="margin:10px 0 20px 0; border:1px solid rgba(255,255,255,0.2);" />
+
+            <p style="margin-bottom:20px; line-height:1.6;">
+                PRMS is designed for two types of users: 
+                <b>Administrators</b> who manage the healthcare facility, register patients, 
+                and monitor operations, and <b>Patients</b> who can view their medical records, 
+                book appointments, and access their health information.
+            </p>
+
+            <h3 style="margin-top:20px; color:#00e0ff;">Get In Touch</h3>
+            <hr style="margin:10px 0 20px 0; border:1px solid rgba(255,255,255,0.2);" />
+
+            <p>📍 <b>Address:</b> Healthcare Center, Medical District</p>
+            <p>📞 <b>Phone:</b> +1 (555) 123-4567</p>
+            <p>✉ <b>Email:</b> support@prms-healthcare.com</p>
+            <p>🌐 <b>Website:</b> www.prms-healthcare.com</p>
+
+            <div style="text-align:center; margin-top:30px;">
+                <a href="@Url.Action("Index","Home")" style="color:#00e0ff; text-decoration:none;">
+                    ← Back to Login
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

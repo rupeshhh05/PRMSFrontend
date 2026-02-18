@@ -1,0 +1,161 @@
+/* ===== FULL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #2c3e50;   /* darker exact tone */
+    color: white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 22px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar li:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+/* ===== LOGIN SECTION ===== */
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    width: 420px;
+    padding: 55px 45px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* ===== TOGGLE BUTTON ===== */
+.toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.toggle button {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.toggle button.active {
+    background: white;
+    color: #0072ff;
+    font-weight: 500;
+}
+
+/* ===== INPUT FIELDS ===== */
+.login-card input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== REGISTER TEXT ===== */
+.register-text {
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #00e0ff;
+    text-decoration: none;
+}

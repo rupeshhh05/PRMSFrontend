@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "PRMS Login";
+}
+
+<div class="main-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>PRMS Navigation</h2>
+        <ul>
+            <li>
+                <a asp-controller="Home" asp-action="About" style="color:white; text-decoration:none;">
+                    📄 About Us
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="Contact" style="color:white; text-decoration:none;">
+                    📞 Contact Us
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Login Section -->
+    <div class="login-section">
+        <div class="login-card">
+            <h2>PRMS Secure Login</h2>
+
+            <div class="toggle">
+                <button type="button" class="active" id="patientBtn">Patient</button>
+                <button type="button" id="adminBtn">Admin</button>
+            </div>
+
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+
+            <button class="login-btn" id="loginBtn">Patient Login</button>
+
+            <p class="register-text">
+                New user? <a href="#">Register</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const patientBtn = document.getElementById("patientBtn");
+    const adminBtn = document.getElementById("adminBtn");
+    const loginBtn = document.getElementById("loginBtn");
+
+    patientBtn.addEventListener("click", function () {
+        patientBtn.classList.add("active");
+        adminBtn.classList.remove("active");
+        loginBtn.innerText = "Patient Login";
+    });
+
+    adminBtn.addEventListener("click", function () {
+        adminBtn.classList.add("active");
+        patientBtn.classList.remove("active");
+        loginBtn.innerText = "Admin Login";
+    });
+</script>
