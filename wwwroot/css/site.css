@@ -42,28 +42,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;   /* ✅ Added spacing */
 }
 
 /* Login card */
 .login-card {
     background: rgba(255,255,255,0.15);
-    padding: 40px;
+    padding: 50px 45px;   /* ✅ Increased inner spacing */
     width: 350px;
     border-radius: 15px;
     text-align: center;
     backdrop-filter: blur(10px);
 }
 
+/* Heading spacing */
 .login-card h2 {
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 25px;   /* ✅ More space */
 }
 
 /* Inputs */
 .login-card input {
     width: 100%;
-    padding: 12px;
-    margin: 12px 0;
+    padding: 14px;   /* ✅ Slightly bigger */
+    margin: 15px 0;  /* ✅ Better spacing */
     border-radius: 8px;
     border: none;
 }
@@ -71,8 +73,8 @@ body {
 /* Button */
 .login-card button {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
+    padding: 14px;
+    margin-top: 15px;   /* ✅ More gap */
     border-radius: 25px;
     border: none;
     background: linear-gradient(to right, #00c6ff, #0072ff);
